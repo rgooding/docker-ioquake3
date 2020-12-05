@@ -1,10 +1,10 @@
-#ioquake3 Dedicated Server
+# ioquake3 Dedicated Server
 
 ioquake3 dedicated server built from source with nginx auto-configured to serve maps and mods over
 HTTP for fast downloads.
 
 
-###Running the container
+### Running the container
 
 This requires pak0.pk3 from the original game and the latest patch data. The patch files can be downloaded here: https://ioquake3.org/extras/patch-data/
 
