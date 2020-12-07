@@ -8,6 +8,8 @@ Q3_PORT=27960
 HTTP_PORT=27980
 # The hostname as seen by clients. Used for downloading maps and mods over HTTP
 WAN_HOSTNAME="example.com"
+# Server name
+Q3_SERVERNAME="ioquake3 Server"
 # Quake 3 server password
 Q3_PASSWORD="mysecretpassword"
 
@@ -27,6 +29,7 @@ docker run -it --rm --name ioquake3 \
   -v $BASEDIR/data/mods:/mods:ro \
   -p $Q3_PORT:$Q3_PORT/udp \
   -p $HTTP_PORT:$HTTP_PORT \
+  -e Q3_SERVERNAME="$Q3_SERVERNAME" \
   -e Q3_PASSWORD="$Q3_PASSWORD" \
   -e Q3_PORT=$Q3_PORT \
   -e Q3_HTTP_PORT=$HTTP_PORT \
