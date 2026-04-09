@@ -70,7 +70,7 @@ else
 
 	# Download URL needs to be double quoted
 	exec gosu $Q3_USER \
-		$Q3ROOT/ioq3ded.x86_64 +set fs_basepath $Q3ROOT +set dedicated 1 \
+		$Q3ROOT/ioq3ded +set fs_basepath $Q3ROOT +set dedicated 1 \
 		+set com_hunkmegs 64 +set sv_allowDownload 1 \
 		+set sv_dlURL "\"$DOWNLOAD_URL\"" \
 		+set net_port $Q3_PORT +set sv_hostname "$Q3_SERVERNAME" $@
